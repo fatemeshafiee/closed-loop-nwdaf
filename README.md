@@ -6,4 +6,5 @@
 | ML Model Provision (Source code) |   https://github.com/fatemeshafiee/MLModelProvision.git          |
 | OAI-NWDAF (Source code)          |   https://github.com/fatemeshafiee/oai-cn5g-nwdaf.git            |
 | OAI-SMF (Source code)            |   https://github.com/fatemeshafiee/oai-smf.git                   |
+| UPG-VPP (Source code)            |   https://github.com/fatemeshafiee/upg-vpp-tr.git                |
 
