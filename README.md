@@ -9,6 +9,14 @@ Ecsvaluation shows that the closed-loop pipeline can detect and react to threats
 ## Repository overview
 
 This work is implemented across multiple repositories, each covering a specific part of the closed-loop NWDAF system:
+# closed-loop-nwdaf
+| Repository Name                  | Repository Link                                                  |
+|----------------------------------|------------------------------------------------------------------|
+| open5gs-k8s-nwadf                |   https://github.com/fatemeshafiee/open5gs-k8s-nwdaf.git         |
+| Open5GS (Core Source code)       |   https://github.com/fatemeshafiee/open5gs-ees.git               |
+| ML Model Provision (Source code) |   https://github.com/fatemeshafiee/MLModelProvision.git          |
+| OAI-NWDAF (Source code)          |   https://github.com/fatemeshafiee/oai-cn5g-nwdaf.git            |
+
 
 - **Open5GS (Core Source Code)** – [`open5gs-ees`](https://github.com/fatemeshafiee/open5gs-ees.git)  
   Contains the modified Open5GS core, including the implementation of the UPF Event Exposure Service (EES) and the SMF extensions used to trigger closed-loop mitigation actions (releasing malicious PDU sessions).
