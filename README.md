@@ -8,7 +8,6 @@ Ecsvaluation shows that the closed-loop pipeline can detect and react to threats
 
 ## Repository overview
 
-This work is implemented across multiple repositories, each covering a specific part of the closed-loop NWDAF system:
 # closed-loop-nwdaf
 | Repository Name                  | Repository Link                                                  |
 |----------------------------------|------------------------------------------------------------------|
@@ -16,6 +15,9 @@ This work is implemented across multiple repositories, each covering a specific 
 | Open5GS (Core Source code)       |   https://github.com/fatemeshafiee/open5gs-ees.git               |
 | ML Model Provision (Source code) |   https://github.com/fatemeshafiee/MLModelProvision.git          |
 | OAI-NWDAF (Source code)          |   https://github.com/fatemeshafiee/oai-cn5g-nwdaf.git            |
+
+
+This work is implemented across multiple repositories, each covering a specific part of the closed-loop NWDAF system:
 
 
 - **Open5GS (Core Source Code)** – [`open5gs-ees`](https://github.com/fatemeshafiee/open5gs-ees.git)  
