@@ -37,7 +37,7 @@ from the ITU J-FET paper) are implemented and evaluated but not yet released pub
 
 ## Results
 
-Measured on a Kubernetes testbed with OpenAirInterface RAN, a commercial handset, and UERANSIM.
+Measured on a Kubernetes testbed with UERANSIM.
 
 | Property | Result |
 |---|---|
