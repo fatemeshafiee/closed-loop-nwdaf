@@ -32,12 +32,12 @@ extensions to the **SMF and PCF** that consume NWDAF analytics to mitigate probl
 ```
 
 \* The SMF loop (bot detection, PDU session release) is in `open5gs-ees`. The UPF QoS monitoring
-reports and the PCF loop (rate adaptation under congestion, from the ITU J-FET paper) are
-implemented and evaluated but not yet released publicly.
+reports, the final congestion-estimation engine, and the PCF loop (rate adaptation under congestion,
+from the ITU J-FET paper) are implemented and evaluated but not yet released publicly.
 
 ## Results
 
-Measured on a Kubernetes testbed with UERANSIM.
+Measured on a Kubernetes testbed with OpenAirInterface RAN, a commercial handset, and UERANSIM.
 
 | Property | Result |
 |---|---|
@@ -58,7 +58,9 @@ This work spans four repositories, each covering one part of the system:
 
 - **NWDAF analytics and engines** — [`oai-cn5g-nwdaf`](https://github.com/fatemeshafiee/oai-cn5g-nwdaf)
   Extended OAI-NWDAF: the UPF-EES client, the bot-detection engine (graph-based features on live
-  telemetry), the congestion-estimation engine, and the integration with model provisioning.
+  telemetry) with its analytics and subscription handling, and the integration with model
+  provisioning. The congestion component here contains the data collection and model-serving client;
+  the final estimation logic is not yet released.
 
 - **ML model provisioning** — [`MLModelProvision`](https://github.com/fatemeshafiee/MLModelProvision)
   MLflow-based service managing the model lifecycle (artifacts, versions, selection) and serving models
@@ -70,9 +72,10 @@ This work spans four repositories, each covering one part of the system:
   **Start here** to run the system end to end.
 
 > **Release status.** Public here: the UPF Event Exposure Service (usage and volume measurements),
-> the NWDAF analytics engines, the model provisioning service, and the SMF-based mitigation loop.
-> Implemented and evaluated in the papers but not yet released: the UPF QoS monitoring reports and
-> the PCF-based rate adaptation from the ITU J-FET paper.
+> the NWDAF **bot-detection** engine and its analytics, the model provisioning service, and the
+> SMF-based mitigation loop. Implemented and evaluated in the papers but not yet released: the UPF
+> QoS monitoring reports, the final **congestion-estimation** engine, and the PCF-based rate
+> adaptation from the ITU J-FET paper.
 
 ## Getting started
 
